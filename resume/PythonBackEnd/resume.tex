@@ -1,0 +1,255 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Safaet Jaman Arman
+% Based on: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{lmodern}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Safaet Jaman Arman} \\ \vspace{3pt}
+    \small \textbf{Software Developer Intern | Backend Developer (Python/Django)} \\ \vspace{5pt}
+    \small \faMapMarker* \hspace{.5pt} Panchlaish, Chattogram, Bangladesh ~ 
+    \href{mailto:esafaetjaman@gmail.com}{\faEnvelope \hspace{.5pt} \underline{esafaetjaman@gmail.com}} ~ 
+    \href{tel:+8801306726612}{\faPhone \hspace{.5pt} \underline{+8801306726612}} \\ \vspace{3pt}
+    \href{https://linkedin.com/in/safaet-jaman}{\faLinkedin \hspace{.5pt} \underline{linkedin.com/in/safaet-jaman}} ~ 
+    \href{https://github.com/safaet}{\faGithub \hspace{.5pt} \underline{github.com/safaet}} ~
+    \href{https://safaet.github.io/Personal_portfolio/}{\faGlobe \hspace{.5pt} \underline{Portfolio}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {B.Sc. in Computer Science and Engineering (CSE)}{Expected Graduation: [Year]}
+      {International Islamic University Chittagong (IIUC), Bangladesh}{CGPA: [X.XX/4.00]}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Junior Software Engineer (AI/ML)}{July 2024 -- Present}
+      {Code Owls}{Chattogram, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented \textbf{automated CV \& cover letter generation} using LangChain and prompt engineering, reducing generation time by 70\%}
+        \resumeItem{Built and deployed \textbf{FastAPI-based REST APIs} serving 1000+ daily requests with 99\% uptime}
+        \resumeItem{Developed \textbf{A/B testing pipelines} using Python to optimize AI response quality, improving user satisfaction scores by 35\%}
+        \resumeItem{Integrated \textbf{TensorFlow models} for career recommendation features used by 500+ active users}
+        \resumeItem{Collaborated with cross-functional teams (product, design) using Agile methodologies}
+        \resumeItem{\textbf{Tech Stack:} Python, LangChain, FastAPI, TensorFlow, AWS, PostgreSQL, Docker}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Featured Projects}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{Antimicrobial Resistance Prediction} $|$ \emph{Python, Scikit-learn, Pandas, Jupyter, ML}}{\href{https://github.com/safaet/antimicrobial_resistance}{\faGithub}}
+          \resumeItemListStart
+            \resumeItem{Developed machine learning models predicting antibiotic resistance with \textbf{92\% accuracy}}
+            \resumeItem{Processed and analyzed \textbf{10,000+ bacterial genome sequences} using pandas and NumPy}
+            \resumeItem{Implemented and compared \textbf{Random Forest, Logistic Regression, and SVM} classifiers}
+            \resumeItem{Published research paper in \textbf{IJCSAI 2024} journal}
+            \resumeItem{Created data visualization dashboards showing feature importance and model performance metrics}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{CricketInsight - Sports Analytics Platform} $|$ \emph{Django, PostgreSQL, REST API, HTML/CSS}}{\href{https://github.com/safaet/CricketInsight}{\faGithub}}
+          \resumeItemListStart
+            \resumeItem{Built \textbf{full-stack cricket analytics app} with Django backend and responsive frontend}
+            \resumeItem{Designed \textbf{RESTful APIs} for match data, player statistics, and real-time score updates}
+            \resumeItem{Implemented \textbf{PostgreSQL database} with optimized queries handling 500+ concurrent users}
+            \resumeItem{Integrated \textbf{web scraping} using Beautiful Soup for live match data aggregation}
+            \resumeItem{Deployed on cloud platform with CI/CD pipeline using Docker}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{DevSearch - Developer Portfolio Platform} $|$ \emph{Django, DRF, PostgreSQL, AWS}}{\href{https://github.com/safaet/DevSearch}{\faGithub}}
+          \resumeItemListStart
+            \resumeItem{Developed \textbf{developer networking platform} with profile management and skill-matching}
+            \resumeItem{Built \textbf{custom authentication system} with JWT tokens and role-based access control}
+            \resumeItem{Implemented \textbf{search and filter functionality} using Django ORM and PostgreSQL full-text search}
+            \resumeItem{Created \textbf{messaging system} for developer collaboration and deployed on \textbf{AWS EC2}}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{School Management System} $|$ \emph{Django, React, PostgreSQL, REST API}}{\href{https://github.com/safaet/school-management}{\faGithub}}
+          \resumeItemListStart
+            \resumeItem{Developed \textbf{full-stack application} with Django backend and React frontend}
+            \resumeItem{Implemented \textbf{CRUD operations} for student profiles, attendance, and grade management}
+            \resumeItem{Built \textbf{role-based access control} (Admin, Teacher, Student) and protected routes}
+            \resumeItem{Used \textbf{Redux} for state management and \textbf{Axios} for API integration}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\textbf{House Price Prediction Web App} $|$ \emph{Python, Streamlit, Scikit-learn, Pandas}}{\href{https://github.com/safaet/house-price-prediction}{\faGithub} \href{https://example.com}{\faExternalLink*}}
+          \resumeItemListStart
+            \resumeItem{Built \textbf{interactive web application} using Streamlit for real-time house price predictions}
+            \resumeItem{Trained \textbf{Linear Regression and Random Forest} models on 5000+ housing records}
+            \resumeItem{Achieved \textbf{R² score of 0.87} through feature engineering and hyperparameter tuning}
+          \resumeItemListEnd 
+          
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, SQL, JavaScript, HTML5, CSS3} \\
+     \textbf{Backend Frameworks}{: Django, Django REST Framework, FastAPI, Flask} \\
+     \textbf{Frontend}{: React (Basic), HTML5, CSS3, JavaScript, Bootstrap} \\
+     \textbf{Databases}{: PostgreSQL, MySQL, SQLite} \\
+     \textbf{AI/ML Libraries}{: TensorFlow, Scikit-learn, Pandas, NumPy, LangChain} \\
+     \textbf{Cloud \& DevOps}{: AWS (EC2, S3), Docker, Git, GitHub Actions, Linux (Ubuntu)} \\
+     \textbf{Tools}{: Jupyter Notebook, Postman, VS Code, LangSmith, Streamlit}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------AWARDS & ACHIEVEMENTS-----------
+\section{Awards \& Achievements}
+    \resumeItemListStart
+        \resumeItem{\textbf{4th Place} -- IIUC Intra-University Programming Contest (Autumn 2022)}
+        \resumeItem{\textbf{Ranked \#1003} -- Kaggle Titanic Machine Learning Competition (Top 10\%)}
+        \resumeItem{\textbf{Pull Shark x2} -- GitHub Achievement for open-source contributions}
+        \resumeItem{\textbf{Published Research} -- IJCSAI 2024 (Antimicrobial Resistance using ML)}
+    \resumeItemListEnd
+\vspace{-15pt}
+
+%-----------PROBLEM SOLVING-----------
+\section{Problem Solving Profile}
+    \resumeItemListStart
+        \resumeItem{\textbf{Competitive Programming:} Solved \textbf{500+ algorithmic problems} (Arrays, Graphs, DP, Greedy, Binary Search)}
+        \resumeItem{\textbf{Active Profiles:} \href{https://leetcode.com/safaet97/}{LeetCode} | \href{https://codeforces.com/profile/safaetjaman}{Codeforces} | \href{https://www.hackerrank.com/profile/C191098_B}{HackerRank} | \href{https://www.stopstalk.com/user/profile/safaet}{StopStalk} | \href{https://www.kaggle.com/safaetjaman}{Kaggle}}
+    \resumeItemListEnd
+\vspace{-15pt}
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+    \resumeItemListStart
+        \resumeItem{\textbf{"Predicting Antimicrobial Resistance using Machine Learning"} -- \textit{International Journal of Computer Science and Artificial Intelligence (IJCSAI), 2024}}
+        \resumeItem{Collected and unified datasets from multiple sources, applied ensemble ML models (Random Forest, Gradient Boosting), achieving \textbf{15\% higher accuracy} compared to previous approaches}
+    \resumeItemListEnd
+\vspace{-15pt}
+
+%-----------ADDITIONAL INFORMATION-----------
+\section{Additional Information}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Areas of Interest}{: Backend Development, Machine Learning, RESTful API Design, Data Science, Healthcare AI} \\
+     \textbf{Open to}{: Software Developer Intern, Backend Developer Intern, AI/ML Intern roles} \\
+     \textbf{Languages}{: English (Fluent), Bengali (Native)} \\
+     \textbf{Availability}{: Immediate | Open to relocation}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}
